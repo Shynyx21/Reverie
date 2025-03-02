@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverie✧ - Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            vertical-align: middle;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .contenedor {
+            padding: 20px;
+            text-align: center;
+        }
+        .opcion {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .opcion:hover {
+            background-color: #333;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        .producto button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .producto button:hover {
+            background-color: #45a049;
+        }
+        .seccion {
+            display: none; /* Oculta las secciones por defecto */
+            padding: 20px;
+        }
+        .seccion:target {
+            display: block; /* Muestra la sección cuando es el objetivo */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logo -->
+    <header>
+        <img src="logo.png" alt="Logo de Reverie✧">
+        <h1>Reverie✧ - Tienda de Computadoras y Laptops</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#laptops">Laptops</a>
+        <a href="#computadoras">Computadoras de Escritorio</a>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section id="inicio" class="seccion">
+        <div class="contenedor">
+            <h2>Bienvenido a Reverie✧</h2>
+            <p>Encuentra las mejores computadoras y laptops al mejor precio.</p>
+            <a href="#laptops" class="opcion">Laptops</a>
+            <a href="#computadoras" class="opcion">Computadoras de Escritorio</a>
+        </div>
+    </section>
+
+    <!-- Sección de laptops -->
+    <section id="laptops" class="seccion">
+        <h2>Laptops</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/laptop1.jpg" alt="Laptop Gamer">
+                <h3>Laptop Gamer</h3>
+                <p>$1,200.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/laptop2.jpg" alt="Laptop Ultrabook">
+                <h3>Laptop Ultrabook</h3>
+                <p>$1,500.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Agrega más laptops aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de computadoras de escritorio -->
+    <section id="computadoras" class="seccion">
+        <h2>Computadoras de Escritorio</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/computadora1.jpg" alt="Computadora Gamer">
+                <h3>Computadora Gamer</h3>
+                <p>$900.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/computadora2.jpg" alt="Computadora de Oficina">
+                <h3>Computadora de Oficina</h3>
+                <p>$700.00</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <!-- Agrega más computadoras aquí -->
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Reverie✧. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
